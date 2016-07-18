@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Willy's Personel Website</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/col.css">
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="lib/jquery.easing.min.js"></script>
+</head>
+<body>
+<div id="left-bar"><header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="/"><img src="img/LOGO.png" alt=""></a>
+        </div>
+        <div id="headerNAV">
+            <nav>
+                <div class="index active"><a href="/">HOME</a></div>
+                <div class="index"><a href="">ABOUT</a></div>
+                <div class="index"><a href="">RESUME</a></div>
+                <div class="index"><a href="">PORTFOLIO</a></div>
+                <div class="index"><a href="">CODE SHOP</a></div>
+                <div class="index"><a href="">BLOG</a></div>
+                <div class="index"><a class='btn' href="/contact">CONTACT</a></div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="section">
+            <div class="bg">
+                <div class="bg-overlay"></div>
+                <div class="bg-title-wrap">
+                    <div class="bg-title">
+                        <p>Front-End developer with passion, Willy.</p>
+                        <p><strong>CODER & DESIGNER</strong></p>
+                    </div>
+                </div>
+                <img src="img/bg3.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <div class="content">
+        <div class="section">
+            <div class="col span_1_of_1"></div>
+        </div>
+    </div>
+    <div class="prefooter">
+        <div class="prefooter-inner">
+            <p>Get a website that looks amazing, and actually works.</p>
+            <a class='btn' href="/contact">Find Out Now!</a>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <div class="col span_1_of_1 logo-word" >
+                <img src="img/LOGO.png" alt="">
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="right-bar">
+    <div class="index"><a href="">ABOUT</a></div>
+    <div class="index"><a href="">RESUME</a></div>
+    <div class="index"><a href="">PORTFOLIO</a></div>
+    <div class="index"><a href="">CODE SHOP</a></div>
+    <div class="index"><a href="">BLOG</a></div>
+    <div><a class='btn' href="/contact">CONTACT</a></div>
+</div>
+<script>
+
+    $(window).resize(function(){
+        var ww = $(window).width();
+        var $bgimg=$('.bg img');
+        if(ww>1000) {
+            $bgimg.css({
+                "left": 0
+            });
+        }
+        if(ww>=640 & ww<1000){
+            $bgimg.css({
+                "left": ww-1000
+            });
+        }
+        if(ww<640){
+            $bgimg.css({
+                "left": ww-640
+            });
+        }
+        if(ww<=900){
+            $('#headerNAV').css({opacity:0});
+        }
+        if(ww>901){
+            $('#headerNAV').css({opacity:1});
+        }
+    })
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Roboto',
+        'Noto Sans TC',
+        sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: #fff;
+        font-size: 16px;
+    }
+    ::selection {
+        background: #000;
+        color: #fff;
+    }
+    ::-moz-selection {
+        background: #000;
+        color: #fff;
+    }
+    #left-bar{
+        width: 100vw;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #right-bar{
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color:#212121;
+        padding:20px 40px;
+        z-index: 1;
+    }
+    #right-bar .btn{
+        font-size:13px;
+    }
+    #right-bar .index{
+        display: block;
+    }
+    #right-bar .index a{
+        display: block;
+        width: 100%;
+    }
+.btn {
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        margin: 10px;
+        font-weight: 100;
+        line-height: 1.2em;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        color: #333  !important;
+        background-color: #fff;
+        transition: .5s;
+        text-shadow: none !important;
+    }
+
+    body {
+        background-color: #000;
+        width: 100%;
+        height: 500px;
+    }
+
+    header {
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .header-inner {
+        width: 100%;
+        display: table;
+        box-sizing: border-box;
+        animation: header-anim 1s ease-in-out;
+    }
+
+    @keyframes header-anim {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    .logo {
+        margin: 0 10px;
+        width: 90px;
+        height: 90px;
+        display: table-cell;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #headerNAV {
+        display: table-cell;
+        text-align: right;
+        vertical-align: middle !important;
+    }
+
+    .index {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .index a {
+        display: inline;
+        font-size: 13px;
+        padding: 9.75px 13px;
+        color: #ccc;
+        text-shadow: 0 0 5px #000;
+    }
+
+    .index a:hover {
+        color: #fff;
+        transition: .5s;
+    }
+    .active{
+        pointer-events: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .bg {
+        width: 100%;
+        height: 565px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .bg img {
+        width: 1500px;
+        position: relative;
+    }
+
+    .bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 500;
+    }
+
+    .bg-title-wrap {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 180px 0 155px;
+    }
+
+    .bg-title {
+        z-index: 700;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        padding: 32px;
+        max-width: 956px;
+        text-rendering: optimizeLegibility;
+        animation: bg-title-anim 1s ease-in-out both;
+    }
+
+    @keyframes bg-title-anim {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 0px, 0);
+        }
+        75% {
+            opacity: 1;
+            transform: translate3d(0, -10px, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0, -10px, 0);
+        }
+    }
+    .bg-title p {
+        margin: 20px auto;
+        font-size: 24px;
+        line-height: 1.5em;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Lora', serif;
+    }
+
+    .bg-title p > strong {
+        font-size: 50px;
+        line-height: 1em;
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-style: normal;
+        letter-spacing: 5px;
+    }
+
+    .prefooter-inner {
+        padding: 70px 0;
+        text-align: center;
+        background-color: #353439;;
+    }
+
+    .prefooter-inner > p {
+        width: 100%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .footer-inner{
+        background-color: #26262a;
+        padding:64px 32px;
+    }
+    .logo-word{
+        width: 100%;
+        text-align: center;
+    }
+    .logo-word img{
+        width: 60px;
+        height: 60px;
+    }
+/*寬度 <=640 時要改變的樣式 (手機)*/
+@media screen and (max-width: 640px) {
+    .bg{
+        height: 420px;
+    }
+    .bg img {
+        width:800px;
+    }
+    .bg-title p{
+        font-size:16px;
+    }
+    .bg-title p>strong{
+        font-size: 36px;
+    }
+}
+
