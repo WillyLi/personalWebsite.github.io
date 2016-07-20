@@ -5,18 +5,18 @@
     <title>Zong Yuan, Li</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/col.css">
-        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/col.css">
+        <link href="../img/favicon.ico" rel="icon" type="image/x-icon" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="lib/jquery.easing.min.js"></script>
+        <script src="../lib/jquery.easing.min.js"></script>
 </head>
 <body>
 <div id="left-bar"><header>
     <div class="header-inner">
         <div class="logo">
-            <a href="/"><img src="img/LOGO.png" alt=""></a>
+            <a href="/"><img src="../img/LOGO.png" alt=""></a>
         </div>
         <a class="NavToggle">
             <div class="top-bar"></div>
@@ -26,11 +26,11 @@
         <div id="headerNAV">
             <nav>
                 <div class="index active"><a href="/">HOME</a></div>
-                <div class="index"><a href="about">ABOUT</a></div>
-                <div class="index"><a href="resume">RESUME</a></div>
-                <div class="index"><a href="code%20shop">CODE SHOP</a></div>
-                <div class="index"><a href="blog">BLOG</a></div>
-                <div class="index"><a class='btn-w' href="contact">CONTACT</a></div>
+                <div class="index"><a href="">ABOUT</a></div>
+                <div class="index"><a href="">RESUME</a></div>
+                <div class="index"><a href="">CODE SHOP</a></div>
+                <div class="index"><a href="">BLOG</a></div>
+                <div class="index"><a class='btn-w' href="/contact">CONTACT</a></div>
             </nav>
         </div>
     </div>
@@ -45,7 +45,7 @@
                         <p><strong>CODER & DESIGNER</strong></p>
                     </div>
                 </div>
-                <img src="img/bg3.jpg" alt="">
+                <img src="../img/bg3.jpg" alt="">
             </div>
         </div>
     </main>
@@ -84,14 +84,14 @@
     <footer>
         <div class="footer-inner">
             <div class="col span_1_of_1 logo-word" >
-                <img src="img/LOGO.png" alt="">
+                <img src="../img/LOGO.png" alt="">
             </div>
             <h4>
-                <a href="about">ABOUT</a>&nbsp; &nbsp;
-                <a href="resume">RESUME</a>&nbsp; &nbsp;
-                <a href="code%20shop">CODE SHOP</a>&nbsp; &nbsp;
-                <a href="blog">BLOG</a>&nbsp; &nbsp;
-                <a href="contact">CONTACT</a>
+                <a href="">ABOUT</a>&nbsp; &nbsp;
+                <a href="">RESUME</a>&nbsp; &nbsp;
+                <a href="">CODE SHOP</a>&nbsp; &nbsp;
+                <a href="">BLOG</a>&nbsp; &nbsp;
+                <a href="/contact">CONTACT</a>
             </h4>
             <div class="copyright">
                 © 2016 ZongYuan Li. All rights reserved. Front-End Developer
@@ -100,11 +100,11 @@
     </footer>
 </div>
 <div id="right-bar">
-    <div class="index"><a href="about">ABOUT</a></div>
-    <div class="index"><a href="resume">RESUME</a></div>
-    <div class="index"><a href="code%20shop">CODE SHOP</a></div>
-    <div class="index"><a href="blog">BLOG</a></div>
-    <div><a class='btn-w' href="contact">CONTACT</a></div>
+    <div class="index"><a href="">ABOUT</a></div>
+    <div class="index"><a href="">RESUME</a></div>
+    <div class="index"><a href="">CODE SHOP</a></div>
+    <div class="index"><a href="">BLOG</a></div>
+    <div><a class='btn-w' href="/contact">CONTACT</a></div>
 </div>
 <script>
     var ww = $(window).width();
@@ -152,14 +152,17 @@
             $('#left-bar').animate({left:'-280px'});
         }else{
             $('#left-bar').animate({left:'0'},
-                  function () {
-                      $('#right-bar').css('visibility','hidden');
-                  }
+                    function () {
+                        $('#right-bar').css('visibility','hidden');
+                    }
             );
         };
         $('.NavToggle').toggleClass('actived');
         toggle = -toggle;
     });
+
+
+
 
 
 
