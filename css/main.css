@@ -460,10 +460,10 @@
         width:1000px;
     }
     .bg-title p{
-        font-size:16px;
+        font-size:13px;
     }
     .bg-title p>strong{
-        font-size: 36px;
+        font-size: 24px;
     }
     #headerNAV{
         visibility: hidden;
