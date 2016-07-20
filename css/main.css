@@ -50,6 +50,7 @@
         color: rgba(26,26,26,.6);
         text-align: center;
     }
+
     #right-bar{
         width: 200px;
         height: 100vh;
@@ -58,7 +59,7 @@
         top: 0;
         background-color:#212121;
         padding:20px 40px;
-        z-index: -1;
+        z-index: 2;
         visibility: hidden;
     }
     #right-bar .btn{
@@ -72,10 +73,118 @@
         width: 100%;
     }
     #left-bar{
-        z-index: 2;
+        z-index: 4;
         position: relative;
         top: 0;
         left: 0;
+    }
+    /*navtoggle*/
+    .NavToggle{
+        display: none;
+        position: absolute;
+        z-index: 1002;
+        top: 50%;
+        right: 20px;
+        margin-top: -8px;
+        padding: 0;
+        vertical-align: middle;
+        line-height: 16px;
+        text-align: right;
+        cursor: pointer;
+        user-select: none;
+        color: rgba(255,255,255,.8);
+        width: 22px;
+        height: 22px;
+    }
+    .top-bar{
+        display: inline-block;
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+        -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -moz-transition: -moz-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -ms-transition: -ms-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -o-transition: -o-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        transition: transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .middle-bar{
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+        -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out,opacity 0s .15s linear;
+        -moz-transition: -moz-transform .1s 0s ease-in-out,top .1s .1s ease-in-out,opacity 0s .15s linear;
+        -ms-transition: -ms-transform .1s 0s ease-in-out,top .1s .1s ease-in-out,opacity 0s .15s linear;
+        -o-transition: -o-transform .1s 0s ease-in-out,top .1s .1s ease-in-out,opacity 0s .15s linear;
+        transition: transform .1s 0s ease-in-out,top .1s .1s ease-in-out,opacity 0s .15s linear;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        position: absolute;
+        top: 7px;
+        right: 0;
+    }
+    .bottom-bar{
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+        -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -moz-transition: -moz-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -ms-transition: -ms-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -o-transition: -o-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        transition: transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        position: absolute;
+        top: 14px;
+        right: 0;
+    }
+    .NavToggle.actived .top-bar{
+        -webkit-transition: -webkit-transform .1s .1s ease-in-out,top .1s 0s ease-in-out;
+        -moz-transition: -moz-transform .1s .1s ease-in-out,top .1s 0s ease-in-out;
+        -ms-transition: -ms-transform .1s .1s ease-in-out,top .1s 0s ease-in-out;
+        -o-transition: -o-transform .1s .1s ease-in-out,top .1s 0s ease-in-out;
+        transition: transform .1s .1s ease-in-out,top .1s 0s ease-in-out;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg); ;
+        -ms-transform:rotate(45deg); ;
+        -o-transform:rotate(45deg); ;
+        transform:rotate(45deg); ;
+        top:7px;
+    }
+    .NavToggle.actived .middle-bar{
+        -webkit-transition: -webkit-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out,opacity 0s .15s linear;
+        -moz-transition: -moz-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out,opacity 0s .15s linear;
+        -ms-transition: -ms-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out,opacity 0s .15s linear;
+        -o-transition: -o-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out,opacity 0s .15s linear;
+        transition: transform .1s 0s ease-in-out,top .1s 0s ease-in-out,opacity 0s .15s linear;
+        opacity: 0;
+        top:7px;
+    }
+    .NavToggle.actived .bottom-bar{
+        -webkit-transition: -webkit-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out;
+        -moz-transition: -moz-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out;
+        -ms-transition: -ms-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out;
+        -o-transition: -o-transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out;
+        transition: transform .1s 0.1s ease-in-out,top .1s 0s ease-in-out;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform:rotate(-45deg);
+        transform: rotate(-45deg);
+        top:7px;
     }
     .btn-w {
         padding: 10px 20px;
@@ -265,6 +374,28 @@
     #resume{
         background-color: #ffffff !important;
     }
+    #photos img{
+        width: 100%;
+    }
+    #photos .col{
+        margin: 0;
+        width: 33.3%;
+    }
+    #information{
+        background-color: #fff;
+        text-align: left;
+    }
+    #information p{
+        font-size: 16px;
+        line-height:2.4em;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: normal;
+        color: rgba(26,26,26,.8);
+        text-align: left;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
     /*--------*/
     .prefooter-inner {
         padding: 70px 0;
@@ -283,6 +414,7 @@
         font-weight: 100;
     }
     .footer-inner a{
+        font-size:13px;
         color:rgba(255,255,255,.6);
     }
     .footer-inner a:hover{
@@ -320,5 +452,6 @@
     .bg-title p>strong{
         font-size: 36px;
     }
+
 }
 
