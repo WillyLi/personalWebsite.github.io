@@ -150,15 +150,6 @@
     <div><a class='btn-w' href="/contact">CONTACT</a></div>
 </div>
 <script>
-    var ww = $(window).width();
-    if(ww<=900){
-        $('#headerNAV').css('visibility','hidden');
-        $('.NavToggle').css('display','inline-block');
-    }
-    if(ww>901){
-        $('#headerNAV').css('visibility','visible');
-        $('.NavToggle').css('display','none');
-    }
 
 
     $(window).resize(function(){
@@ -179,14 +170,7 @@
                 "left": ww-640
             });
         }
-        if(ww<=900){
-            $('#headerNAV').css('visibility','hidden');
-            $('.NavToggle').css('display','inline-block');
-        }
-        if(ww>901){
-            $('#headerNAV').css('visibility','visible');
-            $('.NavToggle').css('display','none');
-        }
+
     });
     var toggle = true;
     $('.NavToggle').click(function() {
