@@ -45,7 +45,7 @@
                         <p><strong>CODER & DESIGNER</strong></p>
                     </div>
                 </div>
-                <img src="img/bg3.jpg" alt="">
+                <img src="img/bg4.jpg" alt="">
             </div>
         </div>
     </main>
@@ -106,65 +106,7 @@
     <div class="index"><a href="blog">BLOG</a></div>
     <div><a class='btn-w' href="contact">CONTACT</a></div>
 </div>
-<script>
-    var ww = $(window).width();
-    if(ww<=900){
-        $('#headerNAV').css('visibility','hidden');
-        $('.NavToggle').css('display','inline-block');
-    }
-    if(ww>901){
-        $('#headerNAV').css('visibility','visible');
-        $('.NavToggle').css('display','none');
-    }
+<script src="lib/tool.js"></script>
 
-
-    $(window).resize(function(){
-        var ww = $(window).width();
-        var $bgimg=$('.bg img');
-        if(ww>1000) {
-            $bgimg.css({
-                "left": 0
-            });
-        }
-        if(ww>=640 & ww<1000){
-            $bgimg.css({
-                "left": ww-1000
-            });
-        }
-        if(ww<640){
-            $bgimg.css({
-                "left": ww-640
-            });
-        }
-        if(ww<=900){
-            $('#headerNAV').css('visibility','hidden');
-            $('.NavToggle').css('display','inline-block');
-        }
-        if(ww>901){
-            $('#headerNAV').css('visibility','visible');
-            $('.NavToggle').css('display','none');
-        }
-    });
-    var toggle = true;
-    $('.NavToggle').click(function() {
-        if(toggle == true){
-            $('#right-bar').css('visibility','visible');
-            $('#left-bar').animate({left:'-280px'});
-        }else{
-            $('#left-bar').animate({left:'0'},
-                  function () {
-                      $('#right-bar').css('visibility','hidden');
-                  }
-            );
-        };
-        $('.NavToggle').toggleClass('actived');
-        toggle = -toggle;
-    });
-
-
-
-
-
-</script>
 </body>
 </html>
