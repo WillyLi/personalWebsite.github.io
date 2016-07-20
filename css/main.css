@@ -455,3 +455,22 @@
 
 }
 
+
+#headerNAV{
+    visibility: visible;
+}
+.NavToggle{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    #headerNAV{
+        visibility: hidden;
+    }
+    .NavToggle{
+        display: inline-block;
+    }
+}
+
+
+
+
