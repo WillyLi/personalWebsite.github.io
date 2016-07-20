@@ -444,7 +444,7 @@
         height: 60px;
     }
 
-/*寬度 <=640 時要改變的樣式 (手機)*/ 
+/*寬度 <=640 時要改變的樣式 (手機)*/
 
 #headerNAV{
     visibility: visible;
@@ -466,7 +466,7 @@
         height: 420px;
     }
     .bg img {
-        width:800px;
+        width:900px;
     }
     .bg-title p{
         font-size:16px;
