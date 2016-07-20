@@ -452,27 +452,6 @@
 .NavToggle{
     display: none;
 }
-@media screen and (max-device-width: 900px){
-    .bg{
-        height: 420px;
-    }
-    .bg img {
-        width:1000px;
-    }
-    .bg-title p{
-        font-size:16px;
-    }
-    .bg-title p>strong{
-        font-size: 36px;
-    }
-    #headerNAV{
-        visibility: hidden;
-    }
-    .NavToggle{
-        display: inline-block;
-    }
-}
-
 @media screen and (max-width: 900px){
     .bg{
         height: 420px;
@@ -486,7 +465,6 @@
     .bg-title p>strong{
         font-size: 36px;
     }
-
     #headerNAV{
         visibility: hidden;
     }
@@ -494,8 +472,3 @@
         display: inline-block;
     }
 }
-
-
-
-
-
