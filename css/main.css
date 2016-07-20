@@ -439,7 +439,7 @@
         height: 60px;
     }
 /*寬度 <=640 時要改變的樣式 (手機)*/
-@media screen and (max-width: 640px) {
+@media screen and (max-device-width: 640px) {
     .bg{
         height: 420px;
     }
@@ -462,7 +462,7 @@
 .NavToggle{
     display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-device-width: 900px) {
     #headerNAV{
         visibility: hidden;
     }
