@@ -106,38 +106,6 @@
     <div class="index"><a href="">BLOG</a></div>
     <div><a class='btn-w' href="/contact">CONTACT</a></div>
 </div>
-<script>
-
-    $(window).resize(function(){
-        var ww = $(window).width();
-        var $bgimg=$('.bg img');
-        if(ww>1000) {
-            $bgimg.css({
-                "left": 0
-            });
-        }
-        if(ww>=640 & ww<1000){
-            $bgimg.css({
-                "left": ww-1000
-            });
-        }
-        if(ww<640){
-            $bgimg.css({
-                "left": ww-640
-            });
-        }
-        if(ww<=900){
-            $('#headerNAV').css({opacity:0});
-        }
-        if(ww>901){
-            $('#headerNAV').css({opacity:1});
-        }
-    })
-
-
-
-
-
-</script>
+    <script src="../lib/tool.js"></script>
 </body>
 </html>
