@@ -452,7 +452,7 @@
 .NavToggle{
     display: none;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 640px){
     .bg{
         height: 420px;
     }
