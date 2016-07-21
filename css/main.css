@@ -21,14 +21,25 @@
         background: #000;
         color: #fff;
     }
-    h2{
+    h1{
         text-align: center;
         color:rgba(26,26,26,.9);
         margin: 1em 0 .5em;
         font-size: 34px;
         line-height: 1.2em;
         text-transform: none;
-        letter-spacing: 0px;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h2{
+        text-align: center;
+        color:rgba(26,26,26,.9);
+        margin: 1em 0 .5em;
+        font-size: 24px;
+        line-height: 1.2em;
+        text-transform: none;
+        letter-spacing: 2px;
         font-weight: 400;
         font-style: normal;
     }
@@ -36,7 +47,7 @@
         text-align: center;
         font-size: 16px;
         line-height: 1.8em;
-        letter-spacing: 0px;
+        letter-spacing: 2px;
         font-weight: 400;
         font-style: normal;
         color: rgba(26,26,26,.6);
@@ -44,7 +55,7 @@
     h4{
         font-size: 13px;
         line-height: 1.8em;
-        letter-spacing: 0px;
+        letter-spacing: 2px;
         font-weight: 400;
         font-style: normal;
         color: rgba(26,26,26,.6);
@@ -52,7 +63,7 @@
     }
 
     #right-bar{
-        width: 350px;
+        width: 250px;
         height: 100vh;
         position: fixed;
         right: 0;
@@ -373,10 +384,19 @@
         margin: 0 auto;
         padding: 96px 32px;
     }
-    #slogan{
+    #slogan,#skill{
         background-color: #edeeef !important;
     }
-    #resume{
+
+    #skill h1,#skill h2,#skill h3,#skill h4,#skill p{
+        margin: 0 0 20px 0;
+        text-align: left;
+    }
+    #experience h1,#experience h2,#experience h3,#experience h4,#experience p{
+        margin: 0 0 20px 0;
+        text-align: left;
+    }
+    #resume,#experience{
         background-color: #ffffff !important;
     }
     #photos img{
@@ -403,7 +423,7 @@
     }
     /*--------*/
     .prefooter-inner {
-        padding: 70px 0;
+        padding:64px 32px;
         text-align: center;
         background-color: #353439;;
     }
@@ -443,6 +463,166 @@
         width: 60px;
         height: 60px;
     }
+/*------------------*/
+    .bar-chart{
+        position: relative;
+        width: 100%;
+        height: 450px;
+        border-bottom: 1px solid #aaa;
+        background: url(../img/axis.png) repeat-x;
+
+    }
+    .bar-chart h3{
+        position: absolute;
+        top: 1vh;
+        right: 3vw;
+        color:#333;
+        font-size: 5vw;
+    }
+    .bar-chart ul{
+        height: 100%;
+    }
+    .bar-chart .axis{
+        width: 8%;
+        height: 100%;
+        display: inline-block;
+        border-right: 1px solid #aaa;
+        border-bottom: 1px solid #edeeef;
+        background-color: #edeeef;
+        top: -2px;
+        z-index: 100;
+    }
+    .bar-chart .axis .label{
+        position: relative;
+        top: -10px;
+        left: -15px;
+        color:#333;
+        padding:0 0 93px 0;
+    }
+    .bar-chart .axis .label:before{
+        content:"";
+        width:70vw ;
+        display: block;
+        height: 0;
+        position: relative;
+        left: 6.5vw;
+
+    }
+    .bar-chart .percent{
+        width: 100%;
+        bottom: 6vh;
+        font-size:6vw;
+        display:block;
+        position: absolute;
+        text-align: center;
+        color:#fff;
+        opacity: .3;
+    }
+    .bar-chart .percent span{
+        font-size: 3.2vw;
+        vertical-align: center;
+    }
+    .bar-chart .skill{
+        font-size: 2.2vw;
+        color:#fff;
+        position: absolute;
+        bottom:3vh;
+        font-weight: 100;
+        text-align: center;
+        width: 100%;
+        text-shadow: 0px 0px 1px #ddd;
+    }
+    .bar-chart  .p-95{
+        width: 16%;
+        height:0;
+        position: absolute;
+        bottom:0;
+        left: 10%;
+    
+    }
+    .bar-chart .aqua{
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+        border: #BBB solid 1px;
+        border-bottom: #BBB solid 1px;
+        border:1px solid #8dc5be;
+        background-color: #b0dbd6;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5fb2a8), color-stop(1, #b0dbd6));
+    }
+    .bar-chart  .p-85{
+        width: 16%;
+        height:0;
+        position: absolute;
+        bottom:0;
+        left: 28%;
+    
+    }
+    .bar-chart .pink{
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+        border: #BBB solid 1px;
+        border-bottom: #BBB solid 1px;
+        border-color: #ebc0b5;
+        background-color: #f4dcd6;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1ae9e), color-stop(1, #f4dcd6));
+    }
+    .bar-chart  .p-90{
+        width: 16%;
+        height:0;
+        position: absolute;
+        bottom:0;
+        left: 46%;
+    
+    }
+    .bar-chart .yellow{
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+        border: #BBB solid 1px;
+        border-bottom: #BBB solid 1px;
+        border-color: #e7af30;
+        background-color: #efc563;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dfae36), color-stop(1, #efc563));
+    }
+    .bar-chart  .p-75{
+        width: 16%;
+        height:0;
+        position: absolute;
+        bottom:0;
+        left: 64%;
+    
+    }
+    .bar-chart .brown{
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+        border: #BBB solid 1px;
+        border-bottom: #BBB solid 1px;
+        border-color: #dcb386;
+        background-color: #dcba83;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bc8e5b), color-stop(1, #dcba83));
+    }
+    .bar-chart  .p-40{
+        width: 16%;
+        height:0;
+        position: absolute;
+        bottom:0;
+        left: 82%;
+    }
+    .bar-chart .red{
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+        border: #BBB solid 1px;
+        border-bottom: #BBB solid 1px;
+        border-color: #e14949;
+        background-color: #da6d6c;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ca4544), color-stop(1, #da6d6c));
+    }
+
+.p-95.go{animation: barA .5s  0s 1 both ;}
+.p-85.go{animation: barB .5s .1s 1 both ;}
+.p-90.go{animation: barC .5s .2s 1 both ;}
+.p-75.go{animation: barD .5s .3s 1 both ;}
+.p-40.go{animation: barE .5s .4s 1 both ;}
+
+@keyframes barA{0%{height: 0;}100%{height: 90%;}}
+@keyframes barB{0%{height: 0;}100%{height: 80%;}}
+@keyframes barC{0%{height: 0;}100%{height: 85%;}}
+@keyframes barD{0%{height: 0;}100%{height: 70%;}}
+@keyframes barE{0%{height: 0;}100%{height: 75%;}}
 
 /*寬度 <=640 時要改變的樣式 (手機)*/
 
@@ -453,11 +633,17 @@
     display: none;
 }
 @media screen and (max-width: 640px){
+    #skill{
+        display: none;
+    }
     .bg{
         height: 420px;
     }
     .bg img {
         width:1000px;
+    }
+    .bg-title{
+        padding: 0;
     }
     .bg-title p{
         font-size:13px;
