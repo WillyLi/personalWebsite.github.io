@@ -47,7 +47,7 @@
                         <p><strong>BLOG:Dear Diary...</strong></p>
                     </div>
                 </div>
-                <img src="../img/bg6.jpg" alt="">
+                <img src="20160722.png" alt="">
             </div>
         </div>
     </main>
@@ -57,17 +57,26 @@
                <div class="col span_9_of_12">
                     <div class="post-index">
                         <h4>CSS3</h4>
-                        <a href="css-selection.html">
+                        <a href="css-selection">
                             <h2>客製化反白文字的顏色· ::selection</h2>
                         </a>
                         <h4>Willy Li · July 22,2016</h4>
                         <div class="img-wrap">
-                            <a href="css-selection.html">
+                            <a href="css-selection">
                                 <img src="20160722.png" alt="">
                             </a>
                         </div>
+                        <p class="red">該效果不支持Internet Explore 8以下的版本！</p>
                         <p class="text-justify">反白顔色，即是你選取一段文字時，所顯示的文字顔色及背景顔色，一般瀏覽器都採用藍底黑字。現在我們也可以直接在CSS中使用 ::selection 參數來客制化我們網頁反白的顔色，讓我們的網頁反白時更加活潑並清晰易懂！</p>
-                        <a href="css-selection.html" class="readmore">閱讀全文</a>
+                        <div class="space"></div>
+                        <script src="https://gist.github.com/WillyLi/9dceb38a9e89b256dbb30a2dfc2dc783.js"></script>
+                        <div class="space"></div>
+                        <p class="text-justify">不過要注意的是， ::selection 標籤只能設定 color 和 background ，而不能設定任何其他參數，例如 font-size 等等。
+                        </p>
+                        <div class="space"></div>
+                        <p class="text-justify">上述代碼詳解：從上述CSS我們可以看到， ::selection 即代表全網頁所使用的效果，而 i::selection 或 p::selection 即是在標籤內的反白效果，當然， .hello::selection 就是 class="hello" 的容器內的反白效果
+                        注釋：由於Firefox（一意孤行 :grin: ）不支持該函數，我們還需要再多加一個Firefox自己的專屬語法 ::-moz-selection 才行
+                        </p>
                     </div>
                </div>
                <div class="col span_1_of_12"></div>

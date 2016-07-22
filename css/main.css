@@ -13,6 +13,7 @@
         color: #fff;
         font-size: 16px;
     }
+
     ::selection {
         background: #000;
         color: #fff;
@@ -20,6 +21,10 @@
     ::-moz-selection {
         background: #000;
         color: #fff;
+    }
+    .red{
+        color:red!important;
+        font-weight:bold!important;
     }
     h1{
         text-align: center;
@@ -313,10 +318,14 @@
     }
 
     .bg img {
-        width: 1500px;
+        width: 2000px;
         position: relative;
+        animation: fadein 0.5s 0.2s both;
     }
-
+    @keyframes fadein {
+        from{opacity: 0}
+        to{opacity: 1}
+    }
     .bg-overlay {
         position: absolute;
         top: 0;
@@ -385,10 +394,17 @@
         margin: 0 auto;
         padding: 96px 32px;
     }
-    #slogan,#skill,#code{
+    #slogan,#code,#ux{
         background-color: #edeeef !important;
     }
-
+    #ux h3,#ux h2{
+        text-align: left;
+        line-height: 2em;
+        text-align: justify;
+    }
+    .text-justify{
+        text-align: justify!important;
+    }
     #skill h1,#skill h2,#skill h3,#skill h4,#skill p{
         margin: 0 0 20px 0;
         text-align: left;
@@ -397,7 +413,7 @@
         margin: 0 0 20px 0;
         text-align: left;
     }
-    #resume{
+    #skill,#resume{
         background-color: #ffffff !important;
     }
     #experience{
@@ -572,7 +588,7 @@
         display: inline-block;
         border-right: 1px solid #aaa;
         border-bottom: 1px solid #edeeef;
-        background-color: #edeeef;
+        background-color: #fff;
         top: -2px;
         z-index: 100;
     }
@@ -777,7 +793,7 @@
         height: 420px;
     }
     .bg img {
-        width:1000px;
+        width:800px;
     }
     .bg-title{
         padding: 0;
@@ -798,3 +814,4 @@
         display: inline-block;
     }
 }
+
