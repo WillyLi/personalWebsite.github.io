@@ -27,11 +27,11 @@
         </a>
         <div id="headerNAV">
             <nav>
-                <div class="index"><a href="">ABOUT</a></div>
-                <div class="index"><a href="">RESUME</a></div>
-                <div class="index"><a href="">CODE SHOP</a></div>
-                <div class="index"><a href="">BLOG</a></div>
-                <div class="index"><a class='btn-w' href="/contact">CONTACT</a></div>
+                <div class="index"><a href="../about">ABOUT</a></div>
+                <div class="index active"><a href="">RESUME</a></div>
+                <div class="index"><a href="../code%20shop">CODE SHOP</a></div>
+                <div class="index"><a href="../blog">BLOG</a></div>
+                <div class="index"><a class='btn-w' href="../contact">CONTACT</a></div>
             </nav>
         </div>
     </div>
@@ -144,7 +144,7 @@
             </div>
             <h4>
                 <a href="../about">ABOUT</a>&nbsp; &nbsp;
-                <a href="../resume">RESUME</a>&nbsp; &nbsp;
+                <a class='active' href="../resume">RESUME</a>&nbsp; &nbsp;
                 <a href="../code%20shop">CODE SHOP</a>&nbsp; &nbsp;
                 <a href="../blog">BLOG</a>&nbsp; &nbsp;
                 <a href="../contact">CONTACT</a>
@@ -157,12 +157,24 @@
 </div>
 <div id="right-bar">
     <div class="index"><a href="../about">ABOUT</a></div>
-    <div class="index"><a href="../resume">RESUME</a></div>
+    <div class="index active"><a href="../resume">RESUME</a></div>
     <div class="index"><a href="../code%20shop">CODE SHOP</a></div>
     <div class="index"><a href="../blog">BLOG</a></div>
     <div><a class='btn-w' href="../contact">CONTACT</a></div>
 </div>
 <script src="../lib/tool.js"></script>
+<script>
+    $(window).scroll(function () {
+        var scrolltop=  $(window).scrollTop();
+        var skilltop = $skill.offsetTop;
+        console.log(scrolltop);
+        console.log(skilltop);
 
+        if (scrolltop>=skilltop){
+            $('.bar').addClass('go');
+        }
+
+    });
+</script>
 </body>
 </html>

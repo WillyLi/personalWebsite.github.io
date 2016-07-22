@@ -58,7 +58,7 @@
         letter-spacing: 2px;
         font-weight: 400;
         font-style: normal;
-        color: rgba(26,26,26,.6);
+        color: rgba(26,26,26,.4);
         text-align: center;
     }
 
@@ -220,6 +220,7 @@
     .btn-b {
         padding: 10px 20px;
         color:#333;
+        background-color: #fff;
         border: 2px solid #333;
         margin: 10px;
         font-weight: 400;
@@ -384,7 +385,7 @@
         margin: 0 auto;
         padding: 96px 32px;
     }
-    #slogan,#skill{
+    #slogan,#skill,#code{
         background-color: #edeeef !important;
     }
 
@@ -396,8 +397,11 @@
         margin: 0 0 20px 0;
         text-align: left;
     }
-    #resume,#experience{
+    #resume{
         background-color: #ffffff !important;
+    }
+    #experience{
+        background-color: #dddddd;
     }
     #photos img{
         width: 100%;
@@ -405,6 +409,7 @@
     #photos .col{
         margin: 0;
         width: 33.3%;
+        padding: 0;
     }
     #information{
         background-color: #fff;
@@ -421,7 +426,86 @@
         margin-bottom: 20px;
         text-align: justify;
     }
-    /*--------*/
+    #post{
+        background-color: #edeeef;
+    }
+    input{
+        width: 100%;
+        line-height: 2em;
+    }
+    input:last-child{
+        width: auto;
+    }
+    textarea{
+        width: 100%;
+        line-height: 2em;
+    }
+    .img-content{
+        padding:1vw 1vw;
+        text-align: center;
+    }
+    .img-wrap{
+        padding:30px 30px 30px 0;
+        text-align: left;
+    }
+    .img-wrap img{
+        width: 100%;
+        }
+    .readmore{
+        font-size: 13px;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 5px;
+        color:rgba(26,26,26,.6);
+        border-bottom:1px solid #aaa;
+    }
+    a.readmore::after {
+        content: " \279D";
+    }
+    .rss{
+            text-align: center;
+        }
+    .line{
+        width: 100%;
+        height: 30px;
+        border-bottom:1px dotted #666;
+    }
+    .post-index h1,.post-index h2,.post-index h3,.post-index h4,.post-index p{
+        text-align: left;
+    }
+    #contact_form h3{
+        text-align: left;
+    }
+    #contact_form h4{
+        text-align: left;
+    }
+    .post-index h2{
+        margin:20px 0;
+    }
+    .post-index p{
+        color:rgba(26,26,26,.6);
+        font-weight:400;
+    }
+    .contact-word{
+        text-align: left;
+    }
+    .contact-word h1{
+        text-align: left;
+    }
+    .contact-word h2{
+        text-align: left;
+    }
+    .contact-word h3{
+        text-align: left;
+    }
+    .contact-word p{
+        font-size: 14px;
+        line-height: 2em;
+        color:rgba(26,26,26,.6);
+        font-weight:400;
+    }
+
+/*--------*/
     .prefooter-inner {
         padding:64px 32px;
         text-align: center;
@@ -624,6 +708,59 @@
 @keyframes barD{0%{height: 0;}100%{height: 70%;}}
 @keyframes barE{0%{height: 0;}100%{height: 75%;}}
 
+/*--------------*/
+    .codebox{
+        border-top: 3px solid #353439;
+        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 300px;
+        background-color: #fff;
+    }
+    .codebox h1{
+        text-align: left;
+        margin: 0;
+        height: 160px;
+        font-weight:400;
+    }
+    .codebox h2{
+        text-align: left;
+    }
+
+    .codebox h4{
+        text-align: left;
+        margin: 0;
+        height: 40px;
+    }
+    .codebox span{
+        color:#666;
+        font-weight: 400;
+        text-align: left;
+        height: 20px;
+        border-bottom:1px solid #aaa;
+    }
+    .codebox:hover {
+        background-color: #353439;
+        transition: 0.5s;
+    }
+    .codebox:hover h1,
+    .codebox:hover h2,
+    .codebox:hover h3,
+    .codebox:hover h4,
+    .codebox:hover span{
+        color:#fff;
+        transition: 0.5s;
+    }
+    .codebox.diable{
+        opacity: .5;
+        pointer-events: none;
+        border-top: 3px solid #fff;
+        border-bottom:1px solid #fff;
+        border-left:1px solid #fff;
+        border-right:1px solid #fff;
+        background-color: transparent;
+    }
+/*---------------*/
 /*寬度 <=640 時要改變的樣式 (手機)*/
 
 #headerNAV{
@@ -650,6 +787,9 @@
     }
     .bg-title p>strong{
         font-size: 24px;
+    }
+    .img-content{
+        padding:10vw 20vw;
     }
     #headerNAV{
         visibility: hidden;

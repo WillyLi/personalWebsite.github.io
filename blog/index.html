@@ -19,7 +19,7 @@
 <div id="left-bar"><header>
     <div class="header-inner">
         <div class="logo">
-            <a href="/"><img src="../img/LOGO.png" alt=""></a>
+            <a href="../"><img src="../img/LOGO.png" alt=""></a>
         </div>
         <a class="NavToggle">
             <div class="top-bar"></div>
@@ -28,11 +28,11 @@
         </a>
         <div id="headerNAV">
             <nav>
-                <div class="index"><a href="">ABOUT</a></div>
-                <div class="index"><a href="">RESUME</a></div>
-                <div class="index"><a href="">CODE SHOP</a></div>
-                <div class="index"><a href="">BLOG</a></div>
-                <div class="index"><a class='btn-w' href="/contact">CONTACT</a></div>
+                <div class="index"><a href="../about">ABOUT</a></div>
+                <div class="index"><a href="../resume">RESUME</a></div>
+                <div class="index"><a href="../code%20shop">CODE SHOP</a></div>
+                <div class="index active"><a href="../blog">BLOG</a></div>
+                <div class="index"><a class='btn-w' href="../contact">CONTACT</a></div>
             </nav>
         </div>
     </div>
@@ -43,44 +43,65 @@
                 <div class="bg-overlay"></div>
                 <div class="bg-title-wrap">
                     <div class="bg-title">
-                        <p>Front-End developer with passion, Willy.</p>
-                        <p><strong>CODER & DESIGNER</strong></p>
+                        <p>Notes of my developing process.</p>
+                        <p><strong>BLOG:Dear Diary...</strong></p>
                     </div>
                 </div>
-                <img src="../img/bg3.jpg" alt="">
+                <img src="../img/bg6.jpg" alt="">
             </div>
         </div>
     </main>
     <div class="content">
-        <section id="slogan">
-            <div class="page-content">
-                <div class="col span_2_of_12"></div>
-                    <div class="col span_8_of_12">
-                        <h2>設計，是賦予事物意義的動作。</h2>
-                        <h3>「靈感就像是腦中的交集點。客戶交付的課題，附加的條件，必要事項的確認，突然地，一個毫不相關的隱喻湧現腦中；此時，這些原本毫無交集的線瞬間交會。」</h3>
-                        <h3 style="text-align: right;">——佐藤卓</h3>
+       <section id="post">
+           <div class="page-content">
+               <div class="col span_9_of_12">
+                    <div class="post-index">
+                        <h4>CSS3</h4>
+                        <a href="css-selection">
+                            <h2>客製化反白文字的顏色· ::selection</h2>
+                        </a>
+                        <h4>Willy Li · July 22,2016</h4>
+                        <div class="img-wrap">
+                            <a href="css-selection">
+                                <img src="20160722.png" alt="">
+                            </a>
+                        </div>
+                        <p>反白顔色，即是你選取一段文字時，所顯示的文字顔色及背景顔色，一般瀏覽器都採用藍底黑字。現在我們也可以直接在CSS中使用 ::selection 參數來客制化我們網頁反白的顔色，讓我們的網頁反白時更加活潑並清晰易懂！</p>
+                        <a href="css-selection" class="readmore">閱讀全文</a>
                     </div>
-                <div class="section"></div>
-            </div>
-        </section>
-        <section id="resume">
-            <div class="page-content">
-                <div class="col span_2_of_12"></div>
-                <div class="col span_8_of_12">
-                    <h2>待價而沽</h2>
-                    <h3>我正在找工作，希望您能撥冗看看我的履歷，相信不會讓您失望。</h3>
-                    <h3>
-                    <a target="_blank" class="btn-b" href="https://issuu.com/573164/docs/portfolio">RESUME(ISSUU)</a>
-                    <a target="_blank" class="btn-b" href="/portfolio.pdf">RESUME(PDF)</a>
-                    </h3>
-                </div>
-                <div class="section"></div>
-            </div>
-        </section>
+               </div>
+               <div class="col span_1_of_12"></div>
+               <div class="col span_2_of_12">
+                   <div class="rss">
+                       <h2>立刻訂閱</h2>
+                       <h4>掌握第一手的新文章</h4>
+                       <div class="space"></div>
+                       <div class="img-content">
+                            <img src="../img/rss.png" alt="" style="width: 100%;">
+                       </div>
+                       <a href="feed.xml" class="btn-b">RSS</a>
+                   </div>
+                   <div class="line"></div>
+                   <div class="rss">
+                       <h2>待價而沽</h2>
+                       <h4>我正在找工作，希望您能撥冗看看我的履歷，相信不會讓您失望。</h4>
+                       <div class="space"></div>
+                       <div class="img-content">
+                           <img src="../img/job.png" alt="" style="width: 100%;">
+                       </div>
+                       <h3>
+                           <a target="_blank" class="btn-b" href="../portfolio.pdf">RESUME</a>
+                       </h3>
+                   </div>
+                   <div class="line"></div>
+               </div>
+               <div class="section"></div>
+           </div>
+       </section>
     </div>
     <div class="prefooter">
         <div class="prefooter-inner">
-            <p>想知道更多資訊嗎？<a class='btn-w' href="/contact">跟我聊聊</a></p>
+            <p>想知道更多資訊嗎？<a class='btn-w' href="../contact">跟我聊聊</a></p>
         </div>
     </div>
     <footer>
@@ -89,11 +110,11 @@
                 <img src="../img/LOGO.png" alt="">
             </div>
             <h4>
-                <a href="">ABOUT</a>&nbsp; &nbsp;
-                <a href="">RESUME</a>&nbsp; &nbsp;
-                <a href="">CODE SHOP</a>&nbsp; &nbsp;
-                <a href="">BLOG</a>&nbsp; &nbsp;
-                <a href="/contact">CONTACT</a>
+                <a href="../about">ABOUT</a>&nbsp; &nbsp;
+                <a href="../resume">RESUME</a>&nbsp; &nbsp;
+                <a href="../code%20shop">CODE SHOP</a>&nbsp; &nbsp;
+                <a class="active" href="../blog">BLOG</a>&nbsp; &nbsp;
+                <a href="../contact">CONTACT</a>
             </h4>
             <div class="copyright">
                 © 2016 ZongYuan Li. All rights reserved. Front-End Developer
@@ -102,11 +123,11 @@
     </footer>
 </div>
 <div id="right-bar">
-    <div class="index"><a href="">ABOUT</a></div>
-    <div class="index"><a href="">RESUME</a></div>
-    <div class="index"><a href="">CODE SHOP</a></div>
-    <div class="index"><a href="">BLOG</a></div>
-    <div><a class='btn-w' href="/contact">CONTACT</a></div>
+    <div class="index"><a href="../about">ABOUT</a></div>
+    <div class="index"><a href="../resume">RESUME</a></div>
+    <div class="index"><a href="../code%20shop">CODE SHOP</a></div>
+    <div class="index active"><a href="../blog">BLOG</a></div>
+    <div><a class='btn-w' href="../contact">CONTACT</a></div>
 </div>
 <script src="../lib/tool.js"></script>
 
