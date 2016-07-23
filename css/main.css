@@ -320,7 +320,7 @@
     .bg img {
         width: 2000px;
         position: relative;
-        animation: fadein 0.5s 0.2s both;
+        animation: fadein 0.5s 0.5s both;
     }
     @keyframes fadein {
         from{opacity: 0}
