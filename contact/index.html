@@ -133,5 +133,26 @@
     <div><a class='btn-w active' href="../contact">CONTACT</a></div>
 </div>
     <script src="../lib/tool.js"></script>
+    <script>
+
+        $(function() {
+            $("#contact_form .btn-b").click(function() {
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var message = $("#message").val();
+                var dataString = 'name='+ name + '&email=' + email + '&message=' + message;
+                console.log(123)
+                $.ajax({
+                    type: "POST",
+                    url: "email.php",
+                    data: dataString,
+                    success: function(){
+                       alert('成功了');
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>
