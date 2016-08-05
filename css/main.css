@@ -815,3 +815,10 @@
     }
 }
 
+#contact_form input,#contact_form textarea{
+    color:black;
+}
+.success{
+    color:black;
+    display: none;
+}
