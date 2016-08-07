@@ -145,10 +145,9 @@
                 $.ajax({
                     type: "POST",
                     url: "email.php",
-                    data: dataString,
-                    success: function(){
-                       alert('成功了');
-                    }
+                    data: dataString
+                }).done(function() {
+                    alert( "success" );
                 });
                 return false;
             });
